@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<support>
+<user_plugin>
+	<param name="UserSq37games" pluginName="sq37games" pluginId="700248">UserSq37games</param>
+</user_plugin>
+<iap_plugin>
+	<param name="IAPOnlineSq37games" pluginName="sq37games" pluginId="700248">IAPOnlineSq37games</param>
+</iap_plugin>
+<analytics_plugin>
+	<param name="AnalyticsSq37games" pluginName="sq37games" pluginId="700248">AnalyticsSq37games</param>
+</analytics_plugin>
+</support>

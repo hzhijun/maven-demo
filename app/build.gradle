@@ -1,0 +1,94 @@
+//println( "parenPath == " +  project.name)
+//
+//if (project == "a"){
+//    apply plugin: 'com.android.application'
+//}else {
+//}
+apply plugin:'com.android.library'
+
+android {
+    compileSdkVersion androidCfg.compileSdkVersion
+    defaultConfig {
+//        if (project == "a"){
+//            applicationId androidCfg.applicationId
+//        }
+//        applicationId androidCfg.applicationId
+        minSdkVersion androidCfg.minSdkVersion
+        targetSdkVersion androidCfg.targetSdkVersion
+        versionCode androidCfg.versionCode
+        versionName androidCfg.versionName
+        multiDexEnabled true
+    }
+
+//    signingConfigs{
+//        jks_config {
+//            keyAlias 'jdzl'
+//            keyPassword 'android'
+//            storeFile file('../com.kr37.jdzl.google.jks')
+//            storePassword 'android'
+//        }
+//    }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.jks_config
+//        }
+//
+//    }
+
+    compileOptions {//使用JAVA8语法解析
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+//    buildTypes {
+//        debug {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.jks_config
+//            manifestPlaceholders = manifestCfg
+//        }
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.jks_config
+//            manifestPlaceholders = manifestCfg
+//        }
+//    }
+
+
+//    android {
+//        lintOptions {
+//            checkReleaseBuilds false
+//            // Or, if you prefer, you can continue to check for errors in release builds,
+//            // but continue the build even when errors are found:
+//            abortOnError false
+//        }
+//    }
+
+    sourceSets {
+//        main {
+//            java.srcDirs = ["${GAME_AS_DIR}app/src/main/java"]
+//            res.srcDirs = ["${GAME_AS_DIR}app/src/main/res"]
+//            jniLibs.srcDirs = ["${GAME_AS_DIR}app/src/main/jniLibs"]
+//        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+//    implementation(name:'WarCells-release2', ext:'aar')
+//    implementation fileTree(dir: 'libs', include: ['*.aar'])
+//    implementation fileTree(dir: 'libs', include: ['*.aar'])
+//    implementation fileTree(include: ['*.aar'], dir: 'libs')
+//    api files(RSDK_JAR_DIR)
+//    implementation 'com.test.maven:testmaven:2.1.2'
+//    api project(':lib_rsdk_plugin_sq37games')
+}

@@ -1,0 +1,4 @@
+include ':app'
+//,'lib_rsdk_plugin_sq37games'
+//
+//project(':lib_rsdk_plugin_sq37games').projectDir = new File("/Users/shuaidong/AndroidProject/cf/sq37games/lib_rsdk_plugin_sq37games") //对应Module的路径

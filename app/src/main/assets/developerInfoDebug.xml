@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<developer>
+
+    <channel
+        TT_gameId="202706165"
+        TT_appSecret="ebf0a3bde81c7615d315b07d62f3e838"
+        TT_isDebug="false"
+        TT_Orientation="landscape"
+        
+        idChannel="700248"
+        r_big_app_id="devsdk"
+        r_sub_app_id="subappid"
+        order_url="http://pay.anysdk.com/v5/Order/getOrderId/"
+        oauthLoginServer="http://devsdk.raysns.com/chenpeng/rsdk-base-server/src/user/login"
+        orientation="landscape"
+        privateKey="426BD77DABA5E768DCDE1548CC5EF041"
+        
+        uApiKey="392D20-3851E-B7F7D-38C19-A76A1D5D7B3"
+        uApiSecret="aeec056467a7715916299bf7e4e4295d"
+        
+        GameMainActivity="org.cocos2dx.lua.AppActivity"
+        IAPOnlineTtgame_notify_url="callback"
+        amountEditable="false"
+        extChannel=""
+
+        sq37games_r_login_rsdkserver_version="v1"
+        sq37games_r_nofify_url="http://devsdk.raysns.com/chenpeng/rsdk-base-server/src/pay/platform_pay_callback/devsdk/sq37games/v1"
+        sq37games_r_order_url="http://devsdk.raysns.com/chenpeng/rsdk-base-server/src/pay/create_order/devsdk/sq37games-1005005001/v1"
+        sq37games_r_sdk_platform="sq37games-1005005001"
+        standby_domain_name="pay.rsdk.com"
+         />
+
+</developer>

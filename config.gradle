@@ -1,0 +1,25 @@
+ext.androidCfg = [
+        compileSdkVersion: 29,
+        applicationId    : 'com.global.zsslg',
+        minSdkVersion    : 21,
+        targetSdkVersion : 29,
+        versionCode      : 6,
+        versionName      : '1.0.6'
+]
+
+ext.signCfg = [
+        keyAlias     : 'zsslg',
+        keyPassword  : 'android',
+        storeFile    : '../keystore/com.global.zsslg_202081011813.keystore',
+        storePassword: 'android',
+]
+
+ext.depensCfg = [
+        // 公共
+        multidex               : 'com.android.support:multidex:1.0.3',
+        play_services_analytics: 'com.google.android.gms:play-services-analytics:16.0.8',
+]
+
+ext.manifestCfg = [
+        channle_package_name    : 'com.global.zsslg',
+]
