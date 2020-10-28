@@ -72,6 +72,8 @@ def NEXUS_REPOSITORY_URL = 'file:./aar'
 uploadArchives {
     repositories {
 
+        println "COMPILE_SDK_VERSION:" + COMPILE_SDK_VERSION
+
         mavenDeployer {
             repository(url: NEXUS_REPOSITORY_URL) {
                 authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
