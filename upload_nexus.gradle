@@ -1,0 +1,90 @@
+//apply plugin: 'maven'
+//
+//// 版本号(com.test.maven:testmaven:1.0.0)
+//def POM_VERSION = '1.0.0'
+//
+//// aar包名(com.test.maven:testmaven:1.0.0)
+//def POM_ARTIFACTID = "testmaven"
+//
+//// 组名 (com.test.maven:testmaven:1.0.0)
+//def POM_GROUPID = 'com.test.maven'
+//
+//// 包类型
+//def POM_PACKAGING = 'aar'
+//
+//// 描述
+//def POM_DESCRIPTION = 'lib for android'
+//
+//// 用户名
+//def NEXUS_USERNAME = 'zhijun.han@rjoy.com'
+//
+//// 密码
+//def NEXUS_PASSWORD = 'coding15513711739'
+//
+////仓库地址
+//def NEXUS_REPOSITORY_URL = 'https://pt-rjoy-maven.pkg.coding.net/repository/coding-demo/android-aar/'
+//
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: NEXUS_REPOSITORY_URL) {
+//                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+//            }
+//            pom.project {
+//                version POM_VERSION
+//                artifactId POM_ARTIFACTID
+//                groupId POM_GROUPID
+//                packaging POM_PACKAGING
+//                description POM_DESCRIPTION
+//            }
+//        }
+//    }
+//}
+//
+
+apply plugin: 'maven'
+
+// 版本号(com.test.maven:testmaven:1.0.0)
+def POM_VERSION = '2.1.2'
+
+// aar包名(com.test.maven:testmaven:1.0.0)
+def POM_ARTIFACTID = "play-services-measurement-api"
+
+// 组名 (com.test.maven:testmaven:1.0.0)
+def POM_GROUPID = 'com.test.maven'
+
+// 包类型
+def POM_PACKAGING = 'aar'
+
+// 描述
+def POM_DESCRIPTION = 'lib for android'
+
+// 用户名
+def NEXUS_USERNAME = 'admin'
+
+// 密码
+def NEXUS_PASSWORD = 'admin'
+
+//仓库地址
+//def NEXUS_REPOSITORY_URL = 'http://localhost:8081/repository/maven-releases/'
+def NEXUS_REPOSITORY_URL = 'file:./aar'
+
+uploadArchives {
+    repositories {
+
+        mavenDeployer {
+            repository(url: NEXUS_REPOSITORY_URL) {
+                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+            }
+            println( "parenPath == " +  project.name)
+
+            pom.project {
+                version POM_VERSION
+                artifactId POM_ARTIFACTID
+                groupId POM_GROUPID
+                packaging POM_PACKAGING
+                description POM_DESCRIPTION
+            }
+        }
+    }
+}
